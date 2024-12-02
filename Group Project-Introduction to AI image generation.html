@@ -15,25 +15,27 @@
             <a href="#" class="logo">CS1102 Group Project</a>
             <nav>
                 <ul>
-                    <li><a href="Group Project-Introduction to AI image generation.html" class="active">Introduction</a></li>
-                    <li><a href="Group Porject- Personal Experience with AI Image Generation .html">Personal Experience with AI Image Generation</a></li>
-                    <li><a href="Group Project Application and benefits .html">Application and Benefits</a></li>
-                    <li><a href="Group Project-Ethical Considerations and Future Prospects.html">Ethical Considerations and Future Prospect</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="01-Background.html" class="active">01-Background</a></li>
+                    <li><a href="02-Architecture.html">02-Architecture</a></li>
+                    <li><a href="03-Pros & Cons.html">03-Pros & Cons</a></li>
+                    <li><a href="04-Our Discovery.html">04-Our Discovery</a></li>
                 </ul>
             </nav>
 
         </header>
-
+        <canvas id="matrixRain"></canvas>
+        <script src="MatrixEffect.js"></script>
         <section class="container">
             <h1 class="SectionHeader">Introduction to AI Image Generation</h1>
             <img src="ai image.jpg" alt="">
             <main>
                 <section class="intro">
                     <h2>the concept of AI image generation</h2>
-                    <p>AI image generation is a transformative technology that leverages artificial intelligence to 
-                        create visual content from textual descriptions. This process employs complex algorithms, particularly 
-                        neural networks and Generative Adversarial Networks (GANs), to analyze vast datasets of images, 
-                        enabling these systems to produce original, high-quality visuals(Miller, 2023).
+                    <p>AI image creation is a revolutionary innovation that uses artificial intelligence to 
+                        turn written descriptions into visual content. In order for these systems to generate 
+                        unique, superior visuals, this procedure uses sophisticated algorithms, especially neural 
+                        networks and Generative Adversarial Networks (GANs), to evaluate enormous image collections.(Miller, 2023).
                     </p>
                     
 
@@ -44,20 +46,19 @@
                 <section class="intro">
                     <h2> How AI Image Generation Works</h2>
                     <h3>Neural Networks: </h3>
-                    <p>At the core of AI image generation are neural networks, which mimic the 
-                        structure of the human brain. These networks consist of layers of interconnected nodes (neurons) 
-                        that process information. As data passes through these layers, the network learns to identify patterns 
-                        and features, progressing from simple shapes to complex textures and colors. This hierarchical learning 
-                        allows the network to generate detailed images that reflect the intricacies of real-world visuals(Pylypchuk, 2024).
+                    <p>Neural networks, which imitate the structure of the human brain, are the foundation of AI picture production. 
+                        Layers of interconnected information-processing nodes, or neurons, make up these networks. The network advances 
+                        from basic shapes to intricate textures and colors as input moves through these layers, teaching it to recognize 
+                        patterns and features. The network can produce complex visualizations that capture the nuances of real-world views 
+                        thanks to its hierarchical learning.(Pylypchuk, 2024).
                     </p>
                     <h3>Generative Adversarial Networks (GANs):</h3>
                     <p>
-                        GANs are a specific type of neural network architecture used 
-                        in image generation. They consist of two components: a generator and a discriminator. The generator creates 
-                        images, while the discriminator evaluates them against real images, providing feedback. This adversarial process 
-                        helps both components improve over time, resulting in increasingly realistic images12. The generator’s goal is to 
-                        produce outputs indistinguishable from real images, while the discriminator aims to accurately classify images as 
-                        real or generated(Miller, 2023).
+                        One particular kind of neural network architecture utilized in image generation is called a GAN. They are made up 
+                        of a discriminator and a generator. The discriminator provides feedback after comparing the generated images to actual 
+                        images. Over time, both elements get better thanks to this adversarial process, producing pictures that are more lifelike. 
+                        The discriminator seeks to correctly identify images as created or real, while the generator seeks to produce outputs that 
+                        are indistinguishable from genuine images.(Miller, 2023).
                     </p>
                 </section>
             </main>
@@ -67,20 +68,21 @@
                   
                     <h3>DALL-E 3:</h3>
                     <p>
-                        Developed by OpenAI, DALL-E 3 can create detailed images from natural language descriptions. 
-                        It utilizes a two-part system: a Prior that converts text into image representations and a Decoder that generates the final image23(Zhu, n.d.).
+                        OpenAI's DALL-E 3 is capable of producing intricate visuals from descriptions in natural language. It uses a 
+                        two-part system: a Decoder that creates the final image and a Prior that transforms text into 
+                        image representations.(Zhu, n.d.).
                     </p>
                     <img src="Dalle-3.jpg" width="500">
                     <h3>Midjourney: </h3>
                     <p>
-                       Known for its artistic capabilities, Midjourney allows users to input natural language prompts to generate 
-                        high-quality visuals. It frequently updates its models to enhance efficiency and output quality34(Zac, 2024).
+                        Midjourney, which is well-known for its artistic ability, lets users create beautiful images by responding to 
+                        natural language prompts. It regularly upgrades its models to improve output quality and efficiency.(Zac, 2024).
                     </p>
                     <img src="Midjourney.jpg" width="500">
                     <h3>Stable Diffusion: </h3>
                     <p>
-                       An open-source model developed by Stability AI, Stable Diffusion enables users to generate images on local machines. 
-                        It has gained popularity for its flexibility and accessibility34(Schulhoff, 2024).
+                        Stable Diffusion is an open-source model created by Stability AI that lets people create images locally. 
+                        Its adaptability and accessibility have contributed to its rise in popularity.(Schulhoff, 2024).
                     </p>
                     <img src="stability.jpg" width="500">
                 </section>
