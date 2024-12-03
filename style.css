@@ -32,7 +32,7 @@ header {
 header a.logo {
     color: #fff;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -230,8 +230,8 @@ button:hover {
     color: #333;
 }
 
-.notes {
-    color: rgba(167, 58, 58, 0.6);
+.watermarks {
+    color: rgba(255, 255, 255, 0.6);
     text-align: right;
     margin-right: 60px;
 }
@@ -264,3 +264,85 @@ ol {
     list-style-position: inside;
     padding-left: 0;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .progress {
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 5px;
+  }
+  
+  .progress.green {
+    background-color: #4CAF50;
+  }
+  
+  .progress.orange {
+    background-color: #ffa500;
+  }
+  
+  .progress.red {
+    background-color: #f44336;
+  }
+  
+  @media (max-width: 600px) {
+    th, td {
+      font-size: 14px;
+    }
+  }
+
+  .gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 500px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .gallery img:hover {
+    border-color: #4CAF50;
+  }
+  
+  
