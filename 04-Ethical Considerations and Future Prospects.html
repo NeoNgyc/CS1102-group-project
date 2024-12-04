@@ -24,82 +24,77 @@
             </nav>
 
         </header>
+        <canvas id="matrixRain"></canvas>
+        <script src="MatrixEffect.js"></script>
 
 
-        <section class="container">
-            <h1 class="SectionHeader">Our Discovery</h1>
-            <img src="assets\img\LLM-discovery.jpg" alt="">
+       <section class="container">
+            <h1 class="SectionHeader">Ethical Considerations and Future Prospects </h1>
+            
             <main>
 
                 <section class="intro">
-                    <h2>Welcome to Our Discovery Section</h2>
-                    <p>
-                        In this part of our website, we provive a user-friendly Virtual Laboratory model which allows
-                        demonstrating our
-                        knowledge of how LLMs work. Through the experiment user will observe how different parameters
-                        influence LLMs (like the
-                        number of layers and the size of the training data) and how much they affect the way the model
-                        works. Such a tactile
-                        experience helps to shed light as to the multi-layered structure of LLM training processes and
-                        the trade-offs involved
-                        in such processes, giving a better understand of these powerful tools.
+                    <h2>Ethical Considerations</h2>
+                    
+                    <div id="main_container">
+                    <p>Although AI image generation provide immense creative potential, there are still some ethical problem need to be addressed:
                     </p>
+                   
+                    <ul>
+                        <li id="bold"> Misuse and Deepfakes</li> 
+                        
+                        <p> Be aware of the potential misuse of AI-generated images for creating deepfakes, which can be used to defame individuals, defame individuals and create non-consensual explicit content.</p>
+                   
+                        <li id="bold"> Copyright and Ownership</li>
+                        <p>As AI models are trained on vast datasets and often sourced from copyrighted material, there are concerns about whether the generated images infringe on the original creators' rights. Also, it is unclear that who owns the rights to the output such as the creater or the user.</p>
+                       
+                        <li id="bold"> Consent and Privacy</li> 
+                        <p>Ensure that any data used to train AI models, including personal images are obtained with proper consent. Meanwhile, respect individuals' privacy by avoiding using identifiable personal images without explicit permission.</p>
+                        <li id="bold"> Respect intellectual property rights</li> 
+                        <P> Be transparent about the sources of the training data and ensure that the generated images do not infringe on existing copyrights.</P> 
+                    <ul>
+                    </div>
 
-                    <h2>Test Question:"Explain what is computer science"</h2>
+                    <h3>Future prospects of AI image generation</h3>
                     <main>
                         <section class="intro">
-                            <h2>Explore the Virtual Lab</h2>
 
-                            <p>Try to adjust the parameters to see how they affect the output of a large language model.
-                            </p>
+                         <p>The future prospects of AI image generation are extensive and promising, with potential applications across a wide range of industries and sectors. Here are some key areas where AI image generation is expected to have a significant impact:
+                    </p>
 
-                            <label for="layers" class="subtitle">Number of Layers:</label><br>
-                            <div class="slider-container">
-                                <div id="layersValue">50</div>
-                                <input type="range" id="layersSlider" min="1" max="100" value="50"
-                                    oninput="update_Slider_Value(this)">
-                            </div>
+                     <ol>
+                        <li>Art and Fashion</li>
+                        <li>Product Visualization</li>
+                        <li>Healthcare</li>
+                        <li>Building Design</li>
+                        </ol>
+                        <h3>Art and Fashion</h3> 
+                            <p>AI can assist artists and designers to save the time and cost as the automating repetitive tasks such as cropping, resizing and filtering are completed by AI (George, n.d.). Also, AI can generate new clothing designs and patterns, which can help fashion designers explore innovative ideas and trends more efficiently. </p> 
+                        <img src="design.png" alt="" height="400" width="400">
+         
+                        <h3>  Product Visualization </h3>
+                            <p> AI technology can generate photorealistic images of products without relying on physical prototypes or traditional photoshoots. By creating realistic product visuals and implementing virtual try-on experiences, AI assists consumers in visualizing products more effectively before making a purchase.
+                        <img src="productvisual.jpeg" alt="" height="400" width="400">
+                        <h3>Healthcare</h3> 
+                            <p>Ai can generate and enhance medical images, aiding diagnosis and treatment planning. It can simulate medical conditions for training and research purposes. For instance, AI-enabled medical imaging can more accurately forecast the survival rate of patients with tumors by evaluating their grade and stage (ONIX, n.d.). Also, AI-generated photos can be used to create educational materials that help patients understand medical conditions and treatments .</p>
+                     
+                     <img src="Healthcare.jpeg" alt="" height="400" width="400">
 
-                            <br>
-                            <label for="dataSize" class="subtitle">Training Data Size (GB):</label><br>
-                            <div class="slider-container">
-                                <div id="dataSizeValue">50</div>
-                                <input type="range" id="dataSizeSlider" min="1" max="100" value="50"
-                                    oninput="update_Slider_Value(this)">
-                            </div>
-
-                            <button onclick="output_generate()">Generate Text</button>
-                            <img id="loadingSpinner" src="assets\img\Spinner.gif"
-                                style="display: none; width: 50px; height: 50px;box-shadow: none;">
-                            <div id="outputText">Your generated text will appear here...</div>
+                        <h3>Building Design</h3>
+                            <p>AI technology can process extensive collections of existing designs, cultural artifacts, and natural forms to generate original and surprising design concepts (Eloy, 2024). This capability offers architects innovative ideas that they might not have thought of on their own. Hence, incorporating generative AI into the architectural design process allows architects to enhance their efficiency in crafting innovative environments.</p>
+                            <img src="Home.jpeg" alt="" height="400" width="400">
+                    
+                          
                         </section>
                     </main>
-                    <h2>Our finding</h2>
-                    <p>
-                        Our findings highlight a crucial aspect of training LLMs: the correlation between the number of
-                        layers in the model and
-                        the magnitude of the training data. Adding more layers in general allows a model to capture the
-                        more intricate features
-                        and relationships in the data and thus possibly leading to a deeper level of precision and
-                        refinement in outputs.
-                        However, this advantage is conditioned on having enough data available. The high number of
-                        layers but low training data
-                        in the models will cause overfitting. Overfitting happens when a model learns the details and
-                        noise in the training data
-                        so much that it impairs generalization and makes that model more susceptible to malfunctions
-                        when applied to unknown
-                        data. On the contrary, a large dataset can reduce the danger of overfitting which provides an
-                        opportunity for more
-                        complex models to generalize better to the new situation.
-                    </p>
+                   
                 </section>
 
 
 
-                <script src="assets\JS\Interact_Script.js"></script>
 
 
-
+    <script src="Interact_Script.js"></script>
 
 
 
